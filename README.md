@@ -10,6 +10,7 @@ Examen de Programación Avanzada
 - js/
 - img/
 - font-awesome/
+- Proyecto Gym (Java EE)
  
 Integrantes  | Código
 ------------- | -------------
