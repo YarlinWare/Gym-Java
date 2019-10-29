@@ -83,12 +83,66 @@
                         <label for="historial">Historial clínico</label>
                         <textarea class="form-control" id="historial" name="historial" placeholder="Indica acerca de probleams de salud, cirugias, tratamientos, alergias, entre otros." rows="5"></textarea>
                     </div>					
-                </div>                
+                </div> 
+                
+                
+                <!-- Registro de rutina -->
+                <div class="container ">
+                    <div class="card-header text-center">
+                        <h2 class="titulo">Plan de ejercicios</h2>
+                    </div>
+                    
+                    <fieldset class="form-group">
+                      <div class="row">
+                        <legend class="col-form-label col-sm-2 pt-0">Seleccione Objetivo</legend>
+                        <div class="col-sm-10">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Objetivo" id="PerderPeso" value="PerderPeso" >
+                            <label class="form-check-label" for="PerderPeso">
+                             Perder peso
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Objetivo" id="AumentarMasa" value="AumentarMasa">
+                            <label class="form-check-label" for="AumentarMasa">
+                              Aumentar masa
+                            </label>
+                          </div>
+                          <div class="form-check ">
+                            <input class="form-check-input" type="radio" name="Objetivo" id="ResistenciaFisica" value="ResistenciaFisica" disabled>
+                            <label class="form-check-label" for="ResistenciaFisica">
+                              Aumentar resistencia fisica
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <h4>Seleccione los días que desea trabajar</h4>
+                    <div>                         
+                        <div class="custom-control custom-checkbox mb-3 d-flex justify-content-between">
+                            <input type="checkbox" class="custom-control-input" id="Lunes" >
+                            <label class="custom-control-label" for="Lunes">Lunes</label>
+                            <input type="checkbox" class="custom-control-input" id="Martes" >
+                            <label class="custom-control-label" for="Martes">Martes</label>
+                            <input type="checkbox" class="custom-control-input" id="Miercoles" >
+                            <label class="custom-control-label" for="Miercoles">Miércoles</label>
+                            <input type="checkbox" class="custom-control-input" id="Jueves" >
+                            <label class="custom-control-label" for="Jueves">Jueves</label>
+                            <input type="checkbox" class="custom-control-input" id="Viernes" >
+                            <label class="custom-control-label" for="Viernes">Viernes</label>
+                            <input type="checkbox" class="custom-control-input" id="Sabado" >
+                            <label class="custom-control-label" for="Sabado">Sábado</label>
+                            <input type="checkbox" class="custom-control-input" id="Domingo" >
+                            <label class="custom-control-label" for="Domingo">Domingo</label>                            
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- -->
             </div>
             <input type="submit" class="btn btn-info btn-lg btn-block" value="Registrar">            
         </form>
     </div>
-
     <!-- ./Contenido -->
 
 

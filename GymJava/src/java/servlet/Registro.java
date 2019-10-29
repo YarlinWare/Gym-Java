@@ -5,6 +5,7 @@
  */
 package servlet;
 
+import contacto.Contacto;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -12,7 +13,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import contacto.Contacto;
+
 /**
  *
  * @author rapterpakfa
@@ -30,8 +31,8 @@ public class Registro extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-           throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
+            throws ServletException, IOException {
+            response.setContentType("text/html;charset=UTF-8");
             Contacto contact = new Contacto();
             
             contact.setNombre(request.getParameter("name1"));

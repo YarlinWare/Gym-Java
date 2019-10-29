@@ -23,6 +23,7 @@ public class Contacto{
     String celular;
     String password;
     String historial;
+    String TipoRutinal;
     int edad;
     int peso;
     int altura;
@@ -108,6 +109,14 @@ public class Contacto{
 
     public void setHistorial(String historial) {
         this.historial = historial;
+    }
+
+    public String getTipoRutinal() {
+        return TipoRutinal;
+    }
+
+    public void setTipoRutinal(String TipoRutinal) {
+        this.TipoRutinal = TipoRutinal;
     }
 
     

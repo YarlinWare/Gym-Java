@@ -71,8 +71,8 @@
                         <div class="card" style="width: 18rem;">
                           <img src="img/fitness-3.jpg" class="card-img-top" alt="...">
                           <div class="card-body" style="font-family: 'Abel', sans-serif;">
-                              <h3>Brazos: <small>Flexiones</small></>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <h4>Brazos: <small>Flexiones</small></h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                           </div>
                         </div>
                     </div>
@@ -80,7 +80,8 @@
                         <div class="card" style="width: 18rem;">
                           <img src="img/fitness-1.jpg" class="card-img-top" alt="...">
                           <div class="card-body" style="font-family: 'Abel', sans-serif;">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p class="card-text"><strong>Peso: </strong></p>
                           </div>
                         </div>
                     </div>
