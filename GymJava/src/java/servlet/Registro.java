@@ -13,6 +13,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import logica.RutinaDia;
 
 /**
  *
@@ -34,6 +35,7 @@ public class Registro extends HttpServlet {
             throws ServletException, IOException {
             response.setContentType("text/html;charset=UTF-8");
             Contacto contact = new Contacto();
+            RutinaDia rutinadia = new RutinaDia();
             
             contact.setNombre(request.getParameter("name1"));
             contact.setCorreo(request.getParameter("email1"));
@@ -43,8 +45,10 @@ public class Registro extends HttpServlet {
             contact.setPeso(Integer.parseInt(request.getParameter("peso")));
             contact.setAltura(Integer.parseInt(request.getParameter("estatura")));
             contact.setHistorial(request.getParameter("historial"));
+            contact.setTipoRutinal(request.getParameter("Objetivo"));
             
             request.setAttribute("registro", contact);
+            request.setAttribute("rutina", rutinadia);
             request.getRequestDispatcher("respuesta.jsp").forward(request, response);
                                         
     }

@@ -6,6 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <jsp:useBean id="registro" scope="request" class="contacto.Contacto" />
+<jsp:useBean id="rutina" scope="request" class="logica.RutinaDia" />
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,11 +63,14 @@
         </div>
         
             <div class="row">
+                <p> <% rutina.RutinaDias(registro.getTipoRutinal()); %> </p>
                 <div class="card-header text-white bg-danger ">
 		    <h3 style="font-family: 'Anton', sans-serif;">Rutinas</h3>
                 </div>
+                
                 <!-- Cartas actividades -->
 		<div class="row pt-5 pb-5 pl-4 d-flex justify-content-center ">
+                    
                     <div class="col-12 col-sm-12 col-md-4 d-flex justify-content-center ">
                         <div class="card" style="width: 18rem;">
                           <img src="img/fitness-3.jpg" class="card-img-top" alt="...">
@@ -93,6 +97,7 @@
                           </div>
                         </div>
                     </div>
+                    
 		</div>
                 
             </div>

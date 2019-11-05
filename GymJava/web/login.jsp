@@ -37,7 +37,7 @@
   <div class="container pt-5 pb-5">
     <div class="row justify-content-center">
       <div class="">
-        <form class="form" method="POST" action="Login">
+        <form class="form" method="POST" action="j_security_check">
           <div class="contain_form">
             <fieldset class="login_fieldset">
               
@@ -46,9 +46,9 @@
               <hr>
               <div class="form-group columns_div">
                 <label>Usuario</label>              
-                <input type="text" class="form-control" id="name1" name="name1" placeholder="Usuario">
+                <input type="text" class="form-control" id="j_username" name="j_username" placeholder="Usuario">
                 <label>Password</label>
-                <input type="password" class="form-control" id="pass1" name="pass1" placeholder="password">
+                <input type="password" class="form-control" id="j_password" name="j_password" placeholder="password">
 
                 <div class="row pt-3">
                   <div class="col-6">

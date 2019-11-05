@@ -33,6 +33,7 @@ public class Login extends HttpServlet {
     
     String nombre;
     String pass;
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
             response.setContentType("text/html;charset=UTF-8");
@@ -42,14 +43,19 @@ public class Login extends HttpServlet {
             
             nombre = contact.getNombre();
             pass = contact.getPassword();
+                        
+            contact.setNombre("Usuario de Prueba");
+            contact.setCorreo("ejemplo@gmail.com");
+            contact.setPassword("");
+            contact.setCelular("300-987 65 43");
+            contact.setEdad(20);
+            contact.setPeso(56);
+            contact.setAltura(170);
+            contact.setHistorial("No Registra");
             
-            if ((nombre == "usuario") && (pass=="1234")) {
-                request.setAttribute("login", contact);
-                request.getRequestDispatcher("respuesta.jsp")
-                        .forward(request, response);
-            }else{
-                request.getRequestDispatcher("login.jsp");
-            }
+            request.setAttribute("registro", contact);
+            request.getRequestDispatcher("respuesta.jsp").forward(request, response);
+       
             
             
             

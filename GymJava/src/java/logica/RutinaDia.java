@@ -36,7 +36,7 @@ public class RutinaDia extends Ejercicios{
     public int CrearAleatorio(){
         int Aleatorio;
         //Rutinas entre 1 a 4 repeticiones
-        Aleatorio = (int) (Math.random() * 4) + 1;
+        Aleatorio = (int) (Math.random() * 4);
         return Aleatorio;
     }
     
@@ -48,7 +48,7 @@ public class RutinaDia extends Ejercicios{
     }
     public String[] RutinaDias(String TipoRutina){
         switch (TipoRutina){            
-            case "GanarMusculo":
+            case "AumentarMasa":
                 Ejercicio1= Calentamiento[CrearAleatorio()];
                 Ejercicio2=Biceps[CrearAleatorio()];
                 Ejercicio3=Triceps[CrearAleatorio()];
@@ -61,6 +61,17 @@ public class RutinaDia extends Ejercicios{
                                 
                 break;
             case "PerderPeso":
+                Ejercicio1=Calentamiento[CrearAleatorio()];
+                Ejercicio2=Biceps[CrearAleatorio()];
+                Ejercicio3=Triceps[CrearAleatorio()];
+                Ejercicio4=Pecho[CrearAleatorio()];
+                Ejercicio5=Abdominales[CrearAleatorio()];
+                Ejercicio6=Piernas[CrearAleatorio()];
+                Ejercicio7=Gluteos[CrearAleatorio()];
+                Ejercicio8=Espalda[CrearAleatorio()];
+                Ejercicio9=Hombros[CrearAleatorio()];
+                break;
+             case "ResistenciaFisica":
                 Ejercicio1=Calentamiento[CrearAleatorio()];
                 Ejercicio2=Biceps[CrearAleatorio()];
                 Ejercicio3=Triceps[CrearAleatorio()];

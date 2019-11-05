@@ -95,21 +95,27 @@
                     <fieldset class="form-group">
                       <div class="row">
                         <legend class="col-form-label col-sm-2 pt-0">Seleccione Objetivo</legend>
-                        <div class="col-sm-10">
+                        <div class="col-sm-10   d-flex justify-content-between">
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="Objetivo" id="PerderPeso" value="PerderPeso" >
+                            <input class="form-check-input" type="radio" 
+                                   name="Objetivo" id="PerderPeso" 
+                                   value="PerderPeso" >
                             <label class="form-check-label" for="PerderPeso">
                              Perder peso
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="Objetivo" id="AumentarMasa" value="AumentarMasa">
+                            <input class="form-check-input" type="radio" 
+                                   name="Objetivo" id="AumentarMasa"
+                                   value="AumentarMasa">
                             <label class="form-check-label" for="AumentarMasa">
                               Aumentar masa
                             </label>
                           </div>
                           <div class="form-check ">
-                            <input class="form-check-input" type="radio" name="Objetivo" id="ResistenciaFisica" value="ResistenciaFisica" disabled>
+                            <input class="form-check-input" type="radio" 
+                                   name="Objetivo" id="ResistenciaFisica" 
+                                   value="ResistenciaFisica">
                             <label class="form-check-label" for="ResistenciaFisica">
                               Aumentar resistencia fisica
                             </label>
@@ -118,20 +124,32 @@
                       </div>
                     </fieldset>
                     <h4>Seleccione los días que desea trabajar</h4>
-                    <div>                         
-                        <div class="custom-control custom-checkbox mb-3 d-flex justify-content-between">
+                    <div class="d-flex justify-content-between">                         
+                        <div class="custom-control custom-checkbox mb-3">
                             <input type="checkbox" class="custom-control-input" id="Lunes" >
                             <label class="custom-control-label" for="Lunes">Lunes</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-3">
                             <input type="checkbox" class="custom-control-input" id="Martes" >
                             <label class="custom-control-label" for="Martes">Martes</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-3">
                             <input type="checkbox" class="custom-control-input" id="Miercoles" >
                             <label class="custom-control-label" for="Miercoles">Miércoles</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-3">
                             <input type="checkbox" class="custom-control-input" id="Jueves" >
                             <label class="custom-control-label" for="Jueves">Jueves</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-3 ">
                             <input type="checkbox" class="custom-control-input" id="Viernes" >
                             <label class="custom-control-label" for="Viernes">Viernes</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-3">
                             <input type="checkbox" class="custom-control-input" id="Sabado" >
                             <label class="custom-control-label" for="Sabado">Sábado</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-3">
                             <input type="checkbox" class="custom-control-input" id="Domingo" >
                             <label class="custom-control-label" for="Domingo">Domingo</label>                            
                         </div>
