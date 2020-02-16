@@ -23,7 +23,8 @@ Configurar el servidor de glassfish los siguientes usuario:
 | Supervisor  | Admin  |  1234 | /admin/. |
 | Pedro  | Premium  |  1234 | /premium/.|
  
- 
+Si no se ha configurado el servidor, entonces proceder a registrarse y una vez realizado el registro
+este cargará una rutina.
  
 Integrantes  | Código
 ------------- | -------------
