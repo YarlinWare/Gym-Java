@@ -159,7 +159,7 @@
                 <!-- -->
             </div>
             <input type="submit" class="btn btn-info btn-lg btn-block" value="Registrar">            
-        </form>
+        </form><br> <br> <br> <br>
     </div>
     <!-- ./Contenido -->
 

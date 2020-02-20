@@ -92,7 +92,7 @@
         </div>   
         <!-- Cartas actividades --> 
  
-        </div>  
+        </div> <br> <br> <br> <br> 
     </body> 
     <!-- Pié de página -->
     <footer class="footer text-faded text-center py-5 navbar-dark bg-dark" style="color:#fff">
