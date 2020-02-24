@@ -18,7 +18,9 @@ public abstract class Rutina {
     public void CalcularRutina(){   
     
     }
-
+    
+    public void CrearAleatorio(){}
+    
     public int getEdad() {
         return edad;
     }
@@ -32,5 +34,6 @@ public abstract class Rutina {
     }
        
     public abstract void generarRutina();  
+
     
 }

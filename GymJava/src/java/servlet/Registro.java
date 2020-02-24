@@ -6,6 +6,7 @@
 package servlet;
 
 import contacto.Contacto;
+import ejercicios.RutinaBrazos;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -13,6 +14,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import logica.Rutina;
 import logica.RutinaDia;
 
 /**
@@ -46,6 +48,7 @@ public class Registro extends HttpServlet {
             contact.setAltura(Integer.parseInt(request.getParameter("estatura")));
             contact.setHistorial(request.getParameter("historial"));
             contact.setTipoRutinal(request.getParameter("Objetivo"));
+           
             
             request.setAttribute("registro", contact);
             request.setAttribute("rutina", rutinadia);
