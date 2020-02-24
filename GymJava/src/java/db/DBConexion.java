@@ -14,9 +14,9 @@ import java.sql.*;
  * @author alejo
  */
 public class DBConexion {
-    static String bd = "agenda";
+    static String bd = "gym_database";
     static String login = "root";
-    static String password = "apdaza777";
+    static String password = "poavanzada";
     static String url = "jdbc:mysql://localhost/"+bd;
     static String mensaje = "";
     
