@@ -1,18 +1,18 @@
 /*
- * DBContactos.java
+ * DBUsuarios.java
  * 
  * Created on 7/04/2008, 10:26:02 PM
  */
 package db;
 
 import java.sql.*;
-import contacto.Contacto;
+import usuario.Usuario;
 
-public class DBContactos {
+public class DBUsuarios {
 
     DBConexion cn;
     
-    public DBContactos() {
+    public DBUsuarios() {
         cn = new DBConexion();
     }
 
@@ -59,7 +59,7 @@ public class DBContactos {
         return res;
     }
 
-    public void insertarContacto(Contacto c) {
+    public void insertarContacto(Usuario c) {
         try {
             PreparedStatement pstm = cn.getConexion().prepareStatement("insert into contactos (con_nombre, "
                     + " con_apellido,"
@@ -84,7 +84,7 @@ public class DBContactos {
 
     }
 
-    public void actualizarContacto(Contacto c) {
+    public void actualizarContacto(Usuario c) {
 
         try {
             PreparedStatement pstm = cn.getConexion().prepareStatement("update contactos set con_nombre = ?, "
@@ -111,7 +111,7 @@ public class DBContactos {
 
     }
 
-    public void borrarContacto(Contacto c) {
+    public void borrarContacto(Usuario c) {
 
         try {
             PreparedStatement pstm = cn.getConexion().prepareStatement("delete from contactos "

@@ -5,7 +5,7 @@
  */
 package servlet;
 
-import contacto.Contacto;
+import usuario.Usuario;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -37,7 +37,7 @@ public class Login extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
             response.setContentType("text/html;charset=UTF-8");
-            Contacto contact = new Contacto();
+            Usuario contact = new Usuario();
             contact.setNombre(request.getParameter("name1"));
             contact.setPassword(request.getParameter("pass1"));
             

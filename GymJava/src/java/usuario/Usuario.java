@@ -1,5 +1,5 @@
 /*
- * Contacto.java
+ * Usuario.java
  * 
  * Created on 7/04/2008, 10:40:35 PM
  * 
@@ -7,7 +7,7 @@
  * and open the template in the editor.
  */
 
-package contacto;
+package usuario;
 
 import java.io.Serializable;
 
@@ -15,7 +15,7 @@ import java.io.Serializable;
  *
  * @author alejo
  */
-public class Contacto{
+public class Usuario{
     int id;
     String nombre;
     String apellido;
@@ -28,7 +28,7 @@ public class Contacto{
     int peso;
     int altura;
 
-    public Contacto() {
+    public Usuario() {
     }
 
     public int getId() {

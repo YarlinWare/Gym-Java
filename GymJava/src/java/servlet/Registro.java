@@ -5,7 +5,7 @@
  */
 package servlet;
 
-import contacto.Contacto;
+import usuario.Usuario;
 import ejercicios.RutinaBrazos;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -36,7 +36,7 @@ public class Registro extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
             response.setContentType("text/html;charset=UTF-8");
-            Contacto contact = new Contacto();
+            Usuario contact = new Usuario();
             RutinaDia rutinadia = new RutinaDia();
             
             contact.setNombre(request.getParameter("name1"));
